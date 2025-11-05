@@ -11,6 +11,11 @@
             box-sizing: border-box;
         }
 
+        ::selection {
+            background-color: #FF5E00;
+            color: #ffffff;
+        }
+
         body {
             font-family: 'Rajdhani', sans-serif;
             background: #0a0a0a;
@@ -890,7 +895,7 @@
         footer {
             background: rgba(0, 0, 0, 0.8);
             border-top: 1px solid rgba(255, 94, 0, 0.2);
-            padding: 40px 20px;
+            padding-top: 20px;
             text-align: center;
         }
 
@@ -910,6 +915,9 @@
         .copyright {
             opacity: 0.6;
             font-size: 0.9rem;
+            display: flex;
+            align-items: center;
+                justify-content: center; /* Центр по горизонтали */
         }
 
         .copyright a {
@@ -922,6 +930,12 @@
             color: #ffffff;
             text-shadow: 0 0 10px currentColor;
         }
+
+.copyrightlogo {
+    width: 25px;
+    height: auto;
+    margin-left: 8px;
+}
 
         /* Scanlines effect */
         .scanlines {
